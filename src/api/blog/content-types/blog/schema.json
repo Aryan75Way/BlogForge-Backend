@@ -38,17 +38,10 @@
       "target": "api::comment.comment",
       "mappedBy": "blog"
     },
-    "user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "blogs"
-    },
     "author": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "blogs"
+      "relation": "oneToOne",
+      "target": "api::author.author"
     }
   }
 }

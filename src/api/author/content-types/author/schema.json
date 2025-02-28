@@ -4,7 +4,8 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "Author"
+    "displayName": "Author",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,17 +14,11 @@
     "name": {
       "type": "string"
     },
-    "email": {
-      "type": "uid"
-    },
     "image": {
       "type": "string"
     },
-    "blogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog",
-      "mappedBy": "author"
+    "email": {
+      "type": "string"
     }
   }
 }
