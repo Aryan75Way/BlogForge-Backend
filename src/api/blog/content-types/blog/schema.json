@@ -42,6 +42,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::author.author"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
